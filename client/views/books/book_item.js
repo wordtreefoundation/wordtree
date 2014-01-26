@@ -1,10 +1,5 @@
 Template.bookItem.helpers({
   ownBook: function() {
-    return this.userId == Meteor.userId();
-  },
-  domain: function() {
-    var a = document.createElement('a');
-    a.href = this.url;
-    return a.hostname;
+    return Meteor.userId() && this.userId == Meteor.userId();
   }
 });

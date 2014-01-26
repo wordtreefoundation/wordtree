@@ -1,14 +1,13 @@
 <template name="bookItem">
-  <div class="post">
-    <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+  <div class="book">
+    <div class="book-content">
+      <h3><a href="{{ pathFor 'bookShow' }}">{{title}}</a></h3>
       <p>
-        Submitted by {{author}}
+        by {{author}}
         {{#if ownBook}}
           <a href="{{ pathFor 'bookEdit' }}">Edit</a>
         {{/if}}
       </p>
     </div>
-    <a href="{{ pathFor 'bookShow' }}" class="discuss btn">Discuss</a>
   </div>
 </template>

@@ -1,0 +1,10 @@
+<template name="bookshelfShow">
+  <div class="bookshelf">
+    <div class="bookshelf-title">
+      <h3>{{ name }} Bookshelf</h3>
+    </div>
+    {{#each books}}
+      {{> bookItem }}
+    {{/each}}
+  </div>
+</template>

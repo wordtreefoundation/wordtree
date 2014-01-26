@@ -1,11 +1,23 @@
 Books = new Meteor.Collection('books');
+
+Books.fields = {
+  title:          'title of the book',
+  author:         'author(s) of the book',
+  publishedYear:  'year the book was published',
+  publishedMonth: 'month the book was published (if known)',
+  bookshelfIds:   'bookshelves this book is associated with',
+  createdAt:      'the date and time the book entry was created',
+  bookIds:        'a list of books (ids of books) in the bookshelf'
+};
+
 Books.allow({
   insert: ownsDocument,
   update: ownsDocument
 });
+
 Books.deny({
   update: function(userId, book, fieldNames) {
-    return _.without(fieldNames, 'url', 'title', 'message').length > 0;
+    return _.difference(fieldNames, _.keys(Books.fields)).length > 0;
   }
 });
 

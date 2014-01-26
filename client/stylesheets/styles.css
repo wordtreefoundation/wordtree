@@ -1,4 +1,4 @@
-.grid-block, .main, .post, .comments li, .comment-form {
+.grid-block, .main, .book, .comments li, .comment-form {
     background: #fff;
     border-radius: 3px;
     padding: 10px;
@@ -14,7 +14,7 @@ body {
     border-radius: 0px 0px 3px 3px;
 }
 #spinner { height: 300px }
-.post {
+.book {
     *zoom: 1;
     -webkit-transition: all 300ms 0ms;
     -webkit-transition-delay: ease-in;
@@ -24,35 +24,35 @@ body {
     position: relative;
     opacity: 1;
 }
-.post:before, .post:after {
+.book:before, .book:after {
     content: "";
     display: table;
 }
-.post:after { clear: both }
-.post.invisible { opacity: 0 }
-.post .upvote {
+.book:after { clear: both }
+.book.invisible { opacity: 0 }
+.book .upvote {
     display: block;
     margin: 7px 12px 0 0;
     float: left;
 }
-.post .post-content { float: left }
-.post .post-content h3 {
+.book .book-content { float: left }
+.book .book-content h3 {
     margin: 0;
     line-height: 1.4;
     font-size: 18px;
 }
-.post .post-content h3 a {
+.book .book-content h3 a {
     display: inline-block;
     margin-right: 5px;
 }
-.post .post-content h3 span {
+.book .book-content h3 span {
     font-weight: normal;
     font-size: 14px;
     display: inline-block;
     color: #aaaaaa;
 }
-.post .post-content p { margin: 0 }
-.post .discuss {
+.book .book-content p { margin: 0 }
+.book .discuss {
     display: block;
     float: right;
     margin-top: 7px;
