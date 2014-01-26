@@ -1,20 +1,20 @@
-Template.postEdit.events({
+Template.bookEdit.events({
   'submit form': function(e) {
     e.preventDefault();
 
-    var currentPostId = this._id;
+    var currentBookId = this._id;
 
-    var postProperties = {
+    var bookProperties = {
       url: $(e.target).find('[name=url]').val(),
       title: $(e.target).find('[name=title]').val(),
       message: $(e.target).find('[name=message]').val()
     }
 
-    Posts.update(currentPostId, {$set: postProperties}, function(error) {
+    Books.update(currentBookId, {$set: bookProperties}, function(error) {
       if (error) {
         alert(error.reason);
       } else {
-        Router.go('postItem', {_id: currentPostId});
+        Router.go('bookShow', {_id: currentBookId});
       }
     });
   },
@@ -22,9 +22,9 @@ Template.postEdit.events({
   'click .delete': function(e) {
     e.preventDefault();
 
-    if (confirm("Delete this post?")) {
-      Posts.remove(this._id);
-      Router.go('postsList');
+    if (confirm("Delete this book?")) {
+      Books.remove(this._id);
+      Router.go('bookList');
     }
   }
 });

@@ -1,11 +1,11 @@
 <template name="header">
   <header class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="{{ pathFor 'postsList' }}">Wordtree</a>
+      <a class="brand" href="{{ pathFor 'home' }}">Wordtree</a>
       <div class="nav-collapse collapse">
         {{#if currentUser}}
         <ul class="nav">
-          <li><a href="{{pathFor 'postSubmit'}}">New</a></li>
+          <li><a href="{{ pathFor 'bookSubmit' }}">Upload Book</a></li>
         </ul>
         {{/if}}
         <ul class="nav pull-right">

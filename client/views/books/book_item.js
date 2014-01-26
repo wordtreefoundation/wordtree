@@ -1,5 +1,5 @@
-Template.postItem.helpers({
-  ownPost: function() {
+Template.bookItem.helpers({
+  ownBook: function() {
     return this.userId == Meteor.userId();
   },
   domain: function() {
