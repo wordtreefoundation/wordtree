@@ -5,9 +5,9 @@
 
 standard-app-packages
 preserve-inputs
-bootstrap
-coffeescript
 iron-router
 spin
-accounts-ui-bootstrap-dropdown
+bootstrap
+coffeescript
 accounts-password
+accounts-ui-bootstrap-dropdown
