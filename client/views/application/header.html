@@ -1,0 +1,17 @@
+<template name="header">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="{{ pathFor 'postsList' }}">Wordtree</a>
+      <div class="nav-collapse collapse">
+        {{#if currentUser}}
+        <ul class="nav">
+          <li><a href="{{pathFor 'postSubmit'}}">New</a></li>
+        </ul>
+        {{/if}}
+        <ul class="nav pull-right">
+          <li>{{loginButtons}}</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</template>
