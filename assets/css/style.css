@@ -2789,6 +2789,13 @@ Dashboard stats
   background-color: #6e1881;
 } 
 
+.dashboard-stat.black {
+  background-color: #444444;
+}
+
+.dashboard-stat.black .more { 
+  background-color: #000000;
+} 
 
 /***
 Tiles(new in v1.1.1)
