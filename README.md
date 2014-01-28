@@ -43,7 +43,7 @@ dependency on this gem using the [Pessimistic Version Constraint][pvc] with two 
 ## Legal
 
 * MIT License - See LICENSE file in this project
-* Copyright (c) 2013 Duane Johnson & Word Tree Foundation
+* Copyright (c) 2014 Word Tree Foundation
 
 [semver]: http://semver.org/
 [pvc]: http://docs.rubygems.org/read/chapter/16#page74
