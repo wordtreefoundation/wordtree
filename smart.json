@@ -1,7 +1,10 @@
 {
   "packages": {
     "iron-router": {},
-    "accounts-ui-bootstrap-dropdown": {},
-    "spin": {}
+    "spin": {},
+    "bootstrap-3": {},
+    "font-awesome-4": {},
+    "uniform-package": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }

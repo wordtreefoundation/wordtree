@@ -1,17 +1,29 @@
 <template name="header">
-  <header class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="{{ pathFor 'home' }}">Wordtree</a>
-      <div class="nav-collapse collapse">
-        {{#if currentUser}}
-        <ul class="nav">
-          <li><a href="{{ pathFor 'bookSubmit' }}">Upload Book</a></li>
-        </ul>
-        {{/if}}
-        <ul class="nav pull-right">
-          <li>{{loginButtons}}</li>
-        </ul>
-      </div>
+  <!-- BEGIN HEADER -->
+  <div class="header navbar navbar-inverse navbar-fixed-top">
+    <!-- BEGIN TOP NAVIGATION BAR -->
+    <div class="header-inner">
+      <!-- BEGIN LOGO -->
+      <a class="navbar-brand wordtree" href="index.html">
+      <img src="/assets/img/logo-med.png" alt="WordTree logo" class="img-responsive"/>
+      </a>
+      <!-- END LOGO -->
+      <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+      <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <img src="/assets/img/menu-toggler.png" alt=""/>
+      </a>
+      <!-- END RESPONSIVE MENU TOGGLER -->
+      <!-- BEGIN TOP NAVIGATION MENU -->
+      <ul class="nav navbar-nav pull-right">
+        <!-- BEGIN USER LOGIN DROPDOWN -->
+        {{ loginButtons }}
+        <!-- END USER LOGIN DROPDOWN -->
+      </ul>
+      <!-- END TOP NAVIGATION MENU -->
     </div>
-  </header>
+    <!-- END TOP NAVIGATION BAR -->
+  </div>
+  <!-- END HEADER -->
+  <div class="clearfix">
+  </div>
 </template>

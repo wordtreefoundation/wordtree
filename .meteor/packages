@@ -7,7 +7,9 @@ standard-app-packages
 preserve-inputs
 iron-router
 spin
-bootstrap
 coffeescript
 accounts-password
-accounts-ui-bootstrap-dropdown
+bootstrap-3
+font-awesome-4
+uniform-package
+accounts-ui-bootstrap-3
