@@ -71,3 +71,27 @@ meteorite@0.7.1 /usr/local/lib/node_modules/meteorite
 ├── fstream@0.1.25 (inherits@2.0.1, graceful-fs@2.0.1, rimraf@2.2.6, mkdirp@0.3.5)
 └── prompt@0.2.11 (revalidator@0.1.6, pkginfo@0.3.0, read@1.0.5, utile@0.2.1, winston@0.6.2)
 ```
+4. Update Dependencies
+
+```bash
+∴ mrt update
+✓ iron-router
+    tag: https://github.com/EventedMind/iron-router.git#v0.6.2
+✓ spin
+    tag: https://github.com/SachaG/meteor-spin.git#v0.2.2
+✓ bootstrap-3
+    tag: https://github.com/mangasocial/meteor-bootstrap-3.git#v0.3.7
+✓ font-awesome-4
+    tag: https://github.com/michaelbishop/meteor-font-awesome-4.git#v4.0.0
+✓ uniform-package
+    tag: https://github.com/Ore4444/uniform-package.git#v0.0.2
+✓ accounts-ui-bootstrap-3
+    tag: https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git#v0.2.4
+
+Done installing smart packages
+```
+5. Start Meteor Server
+
+```bash
+∴ meteor
+```
