@@ -1,6 +1,6 @@
 # Word Tree Foundation Meteor JS App
 
-This is the open source code which runs the wordtree.org website.
+This is the open source code which runs the [wordtree.org](http://wordtree.org/) website.
 
 | Project                 |  WordTree         |
 |------------------------ | ----------------- |
