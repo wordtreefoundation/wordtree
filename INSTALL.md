@@ -1,17 +1,16 @@
-# Installation Instructions
+## Installation Instructions
 
-These instructions were modelled after a [meteor tutorial blog post](http://sebastiandahlgren.se/2013/07/17/tutorial-writing-your-first-metor-application/
+These instructions were modeled after a [meteor tutorial blog post](http://sebastiandahlgren.se/2013/07/17/tutorial-writing-your-first-metor-application/
 ).
 
-## Pre-requisites
+### Pre-requisites
 
 These instructions assume MacOS >= 10.9.1 with homebrew installed.
 
-## Steps
+### Steps
 
 1. Install or Upgrade Node
-
-```shell
+```
 ∴ brew install node
 ∴ brew upgrade node
 ==> Upgrading 1 outdated package, with result:
@@ -26,7 +25,6 @@ patching file tools/gyp/pylib/gyp/xcode_emulation.py
 🍺  /usr/local/Cellar/node/0.10.22: 1096 files, 16M, built in 72 seconds
 ```
 2. Install Meteor
-
 ```
 ∴ curl https://install.meteor.com | /bin/sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -49,8 +47,7 @@ Or see the docs at:
   docs.meteor.com
 ```
 3. Install Meteorite
-
-```bash
+```
 ∴ sudo npm install -g meteorite
 Password:
 npm http GET https://registry.npmjs.org/meteorite
@@ -72,8 +69,7 @@ meteorite@0.7.1 /usr/local/lib/node_modules/meteorite
 └── prompt@0.2.11 (revalidator@0.1.6, pkginfo@0.3.0, read@1.0.5, utile@0.2.1, winston@0.6.2)
 ```
 4. Update Dependencies
-
-```bash
+```
 ∴ mrt update
 ✓ iron-router
     tag: https://github.com/EventedMind/iron-router.git#v0.6.2
@@ -91,7 +87,6 @@ meteorite@0.7.1 /usr/local/lib/node_modules/meteorite
 Done installing smart packages
 ```
 5. Start Meteor Server
-
-```bash
+```
 ∴ meteor
 ```
