@@ -68,7 +68,12 @@ meteorite@0.7.1 /usr/local/lib/node_modules/meteorite
 ├── fstream@0.1.25 (inherits@2.0.1, graceful-fs@2.0.1, rimraf@2.2.6, mkdirp@0.3.5)
 └── prompt@0.2.11 (revalidator@0.1.6, pkginfo@0.3.0, read@1.0.5, utile@0.2.1, winston@0.6.2)
 ```
-4. Update Dependencies
+4. Checkout Project
+```
+git clone https://github.com/wordtreefoundation/wordtree.git
+cd wordtree
+```
+5. Update Dependencies
 ```
 ∴ mrt update
 ✓ iron-router
@@ -86,7 +91,7 @@ meteorite@0.7.1 /usr/local/lib/node_modules/meteorite
 
 Done installing smart packages
 ```
-5. Start Meteor Server
+6. Start Meteor Server
 ```
 ∴ meteor
 ```
