@@ -13,7 +13,7 @@ This is the open source code which runs the [wordtree.org](http://wordtree.org/)
 
 ## Running Locally
 
-See INSTALL.md in this project.
+See [INSTALL.md](https://github.com/wordtreefoundation/wordtree/blob/master/INSTALL.md) in this project.
 
 ## Contributors
 
